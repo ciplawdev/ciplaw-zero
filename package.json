@@ -1,0 +1,26 @@
+{
+  "name": "ciplaw-zero",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "workspaces": [
+    "engine/*",
+    "gateway/*",
+    "sentinel/*",
+    "sdk/*",
+    "dashboard"
+  ],
+  "scripts": {
+    "build": "pnpm -w -r build",
+    "dev": "bash ./scripts/dev.sh",
+    "test": "pnpm -w -r test",
+    "typecheck": "tsc -b ./tsconfig.json",
+    "prisma:generate": "prisma generate",
+    "lint": "echo 'no lint configured'"
+  },
+  "devDependencies": {
+    "typescript": "5.2.2",
+    "vitest": "1.9.3",
+    "pnpm": "8.9.0"
+  }
+}

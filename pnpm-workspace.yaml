@@ -1,0 +1,7 @@
+packages:
+  - "engine/*"
+  - "gateway/*"
+  - "sentinel/*"
+  - "sdk/*"
+  - "dashboard"
+  - "protocol"

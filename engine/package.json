@@ -1,0 +1,14 @@
+{
+  "name": "@ciplaw/engine",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "tweetnacl": "1.0.4",
+    "tweetnacl-util": "0.15.1",
+    "uuid": "9.0.0"
+  }
+}

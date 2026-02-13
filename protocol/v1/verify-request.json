@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VerifyRequest",
+  "type": "object",
+  "properties": {
+    "payload": { "type": "string" },
+    "policy": { "type": "string" },
+    "meta": { "type": "object" }
+  },
+  "required": ["payload"]
+}

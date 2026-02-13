@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model verification_records {
+  id         String   @id @default(dbgenerated("gen_random_uuid()"))
+  created_at DateTime @default(now())
+  status     String
+  ciphertext String
+  nonce      String
+  wrapped_key String
+  alg        String
+  meta_json  Json?
+  result_json Json?
+}
+
+model audit_events {
+  id         String   @id @default(dbgenerated("gen_random_uuid()"))
+  created_at DateTime @default(now())
+  type       String
+  data_json  Json
+}
